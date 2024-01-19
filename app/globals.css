@@ -1,13 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800&display=swap');
+
 @layer reset {
   * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
   }
-
+  ::placeholder {
+    color: red;
+    opacity: 1; /* Firefox */
+  }
+  
+  ::-ms-input-placeholder { /* Edge 12-18 */
+    color: red;
+  }
   body {
-    color: black;
-    background-image: linear-gradient(to bottom, rgb(214, 219, 220), white);
+    color: #fff;
+    background: #0e1621;
   }
   @media (prefers-color-scheme: dark) {
     body {
@@ -27,3 +36,4 @@
     }
   }
 }
+
